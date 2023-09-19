@@ -7,44 +7,32 @@
   </head>
   <body>
     <h1>World Clock</h1>
-    <form action="/submit">
-      <div>
-        <label for="email">What is your email address?</label>
-        <input type="email" name="email" id="email" />
-      </div>
-      <div>
-        <label for="color">What is your favourite colour?</label>
-        <input type="color" name="color" id="" />
-      </div>
-      <div>
-        <label for="animal">Are you a cat or dog person?</label>
-        <input type="radio" name="animal" id="cat" />
-        <label for="cat">Cat</label>
-        <input type="radio" name="animal" id="dog" />
-        <label for="dog">Dog</label>
-      </div>
-      <div>
-        <label for="season">Share your favourite season?</label>
-        <div>
-        <input type="checkbox" name="season" id="winter" />
-        <label for="winter">Winter</label>
-        </div>
-        <div>
-        <input type="checkbox" name="season" id="summer" />
-        <label for="summer">Summer</label>
-        </div>
-        <div>
-        <input type="checkbox" name="season" id="spring" />
-        <label for="spring">Spring</label>
-        </div>
-        <div>
-        <input type="checkbox" name="season" id="autumn" />
-        <label for="autumn">Autumn</label>
-        </div>
-      </div>
-      <div>
-        <input type="submit" value="Sign up" />
-      </div>
-    </form>
+    <form action="/travel"></form>
+    <label for="country">What country would you like to travel to?</label>
+<select name="country" id="country">
+    <option value="">Select a Country</option>
+    <option value="italy">Italy</option>
+    <option value="japan">Japan</option>
+    <option value="south-korea">South Korea</option>
+</select>
+</form>
+<script>
+function showSelectedCountry (event) {
+    if (event.target.value. length > 0) {
+              if (event.target.value === "japan") {
+            alert("Kon'nichiwa");
+          }
+          if (event.target.value === "italy") {
+            alert("Ciao!");
+          }
+          if (event.target.value === "south-korea") {
+            alert("annyeonghaseyo");
+          }
+    }
+}
+
+    let countrySelect = document.querySelector("#country");
+countrySelect.addEventListener('change', showSelectedCountry);
+</script>
   </body>
 </html>
