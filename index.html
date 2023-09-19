@@ -7,30 +7,44 @@
   </head>
   <body>
     <h1>World Clock</h1>
-    <div>
-    <label for="first-name">What is your first name?</label>
-    <input
-      type="text"
-      name=""
-      id="first-name"
-      placeholder="eg. Lily"
-      required
-      autofocus
-    />
-    </div>
-    <div>
-        <label for="age">How old are you?</label>
-    <input
-      type="number"
-      name=""
-      id="age"
-      placeholder="eg. 30"
-      required
-    />
-    </div>
-    <div>
-        <label for="fave-color">What is your favourite colour?</label>
-        <input type="color" name="" id="fave-color">
-    </div>
+    <form action="/submit">
+      <div>
+        <label for="email">What is your email address?</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="color">What is your favourite colour?</label>
+        <input type="color" name="color" id="" />
+      </div>
+      <div>
+        <label for="animal">Are you a cat or dog person?</label>
+        <input type="radio" name="animal" id="cat" />
+        <label for="cat">Cat</label>
+        <input type="radio" name="animal" id="dog" />
+        <label for="dog">Dog</label>
+      </div>
+      <div>
+        <label for="season">Share your favourite season?</label>
+        <div>
+        <input type="checkbox" name="season" id="winter" />
+        <label for="winter">Winter</label>
+        </div>
+        <div>
+        <input type="checkbox" name="season" id="summer" />
+        <label for="summer">Summer</label>
+        </div>
+        <div>
+        <input type="checkbox" name="season" id="spring" />
+        <label for="spring">Spring</label>
+        </div>
+        <div>
+        <input type="checkbox" name="season" id="autumn" />
+        <label for="autumn">Autumn</label>
+        </div>
+      </div>
+      <div>
+        <input type="submit" value="Sign up" />
+      </div>
+    </form>
   </body>
 </html>
