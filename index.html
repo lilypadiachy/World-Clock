@@ -3,26 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
-    <div id="date"></div>
-    <div id="milliseconds"></div>
-    <script>
-      function displayDate() {
-        let date = document.querySelector("#date");
-        date.innerHTML = new Date();
-      }
-
-      function displayMilliseconds() {
-        let date = new Date();
-        let milliseconds = date.getMilliseconds();
-        let millisecond = document.querySelector("#milliseconds");
-
-        millisecond.innerHTML = `${milliseconds}`;
-      }
-      setTimeout(displayDate, 5000);
-      setInterval(displayMilliseconds, 1);
-    </script>
+    <script></script>
   </body>
 </html>
