@@ -6,23 +6,23 @@
     <title>World Clock</title>
   </head>
   <body>
-    <div id="hello">Hello</div>
     <div id="date"></div>
+    <div id="milliseconds"></div>
     <script>
-      function sayHello() {
-        let helloBox = document.querySelector("#hello");
-        helloBox.innerHTML = "annyeonghaseyo";
-      }
-
       function displayDate() {
         let date = document.querySelector("#date");
         date.innerHTML = new Date();
       }
 
-      setTimeout(sayHello, 3000);
+      function displayMilliseconds() {
+        let date = new Date();
+        let milliseconds = date.getMilliseconds();
+        let millisecond = document.querySelector("#milliseconds");
 
-      displayDate();
-      setInterval(displayDate, 1000);
+        millisecond.innerHTML = `${milliseconds}`;
+      }
+      setTimeout(displayDate, 5000);
+      setInterval(displayMilliseconds, 1);
     </script>
   </body>
 </html>
