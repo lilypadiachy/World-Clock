@@ -7,32 +7,11 @@
   </head>
   <body>
     <h1>World Clock</h1>
-    <form action="/travel">
-    <label for="country">What country would you like to travel to?</label>
-<select name="country" id="country">
-    <option value="">Select a Country</option>
-    <option value="italy">Italy</option>
-    <option value="japan">Japan</option>
-    <option value="south-korea">South Korea</option>
-</select>
-</form>
-<script>
-function showSelectedCountry (event) {
-    if (event.target.value. length > 0) {
-              if (event.target.value === "japan") {
-            alert("Kon'nichiwa");
-          }
-          if (event.target.value === "italy") {
-            alert("Ciao!");
-          }
-          if (event.target.value === "south-korea") {
-            alert("annyeonghaseyo");
-          }
-    }
-}
-
-    let countrySelect = document.querySelector("#country");
-countrySelect.addEventListener('change', showSelectedCountry);
-</script>
+    <script>
+      function sayHello (){
+      alert("Hello");
+      }
+      setTimeout(sayHello, 10000);
+    </script>
   </body>
 </html>
