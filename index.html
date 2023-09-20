@@ -6,12 +6,13 @@
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div id="hello">Hello</div>
     <script>
-      function sayHello (){
-      alert("Hello");
+      function sayHello() {
+        let helloBox = document.querySelector("#hello");
+        helloBox.innerHTML = "annyeonghaseyo";
       }
-      setTimeout(sayHello, 10000);
+      setTimeout(sayHello, 3000);
     </script>
   </body>
 </html>
