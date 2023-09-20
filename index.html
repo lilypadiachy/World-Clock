@@ -7,6 +7,16 @@
     <title>World Clock</title>
   </head>
   <body>
-    <script></script>
+    <div id="today"></div>
+    <div id="tomorrow"></div>
+    <script>
+      let today = moment().format('dddd Do MMMM');
+      let todayElement = document.querySelector('#today');
+      todayElement.innerHTML = today;
+
+      let tomorrowElement = document.querySelector('#tomorrow');
+      let tomorrow = moment().add(1, "day").format("dddd Do MMMM");
+      tomorrowElement.innerHTML = `Tomorrow will be ${tomorrow}`;
+    </script>
   </body>
 </html>
